@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bd_saattic2DataSet1" targetNamespace="http://tempuri.org/bd_saattic2DataSet1.xsd" xmlns:mstns="http://tempuri.org/bd_saattic2DataSet1.xsd" xmlns="http://tempuri.org/bd_saattic2DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bd_saattic2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bd_saattic2ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proyecto_SAAT_TIC.My.MySettings.GlobalReference.Default.bd_saattic2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vistaClientesTableAdapter" GeneratorDataComponentClassName="vistaClientesTableAdapter" Name="vistaClientes" UserDataComponentName="vistaClientesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bd_saattic2ConnectionString (MySettings)" DbObjectName="bd_saattic2.dbo.vistaClientes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT intId_persona, vchNombre, vchAPaterno, vchAMaterno, intId_municipo, vchCorreo, intId_tUser, vchUsuario, vchPwd, dtFRegis, intStatus FROM dbo.vistaClientes</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="intId_persona" DataSetColumn="intId_persona" />
+              <Mapping SourceColumn="vchNombre" DataSetColumn="vchNombre" />
+              <Mapping SourceColumn="vchAPaterno" DataSetColumn="vchAPaterno" />
+              <Mapping SourceColumn="vchAMaterno" DataSetColumn="vchAMaterno" />
+              <Mapping SourceColumn="intId_municipo" DataSetColumn="intId_municipo" />
+              <Mapping SourceColumn="vchCorreo" DataSetColumn="vchCorreo" />
+              <Mapping SourceColumn="intId_tUser" DataSetColumn="intId_tUser" />
+              <Mapping SourceColumn="vchUsuario" DataSetColumn="vchUsuario" />
+              <Mapping SourceColumn="vchPwd" DataSetColumn="vchPwd" />
+              <Mapping SourceColumn="dtFRegis" DataSetColumn="dtFRegis" />
+              <Mapping SourceColumn="intStatus" DataSetColumn="intStatus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vistaClientes1TableAdapter" GeneratorDataComponentClassName="vistaClientes1TableAdapter" Name="vistaClientes1" UserDataComponentName="vistaClientes1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bd_saattic2ConnectionString (MySettings)" DbObjectName="bd_saattic2.dbo.vistaClientes1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_persona, Nombre, Apellido_Paterno, Apellido_Materno, Municipio, Correo, Tipo_Usuario, Usuario, Contraseña FROM dbo.vistaClientes1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_persona" DataSetColumn="Id_persona" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Apellido_Paterno" DataSetColumn="Apellido_Paterno" />
+              <Mapping SourceColumn="Apellido_Materno" DataSetColumn="Apellido_Materno" />
+              <Mapping SourceColumn="Municipio" DataSetColumn="Municipio" />
+              <Mapping SourceColumn="Correo" DataSetColumn="Correo" />
+              <Mapping SourceColumn="Tipo_Usuario" DataSetColumn="Tipo_Usuario" />
+              <Mapping SourceColumn="Usuario" DataSetColumn="Usuario" />
+              <Mapping SourceColumn="Contraseña" DataSetColumn="Contraseña" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vistaClientes2TableAdapter" GeneratorDataComponentClassName="vistaClientes2TableAdapter" Name="vistaClientes2" UserDataComponentName="vistaClientes2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bd_saattic2ConnectionString (MySettings)" DbObjectName="bd_saattic2.dbo.vistaClientes2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id_persona, Nombre, Apellido_Paterno, Apellido_Materno, Municipio, Correo, Tipo_Usuario, Usuario, Contraseña FROM dbo.vistaClientes2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id_persona" DataSetColumn="Id_persona" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Apellido_Paterno" DataSetColumn="Apellido_Paterno" />
+              <Mapping SourceColumn="Apellido_Materno" DataSetColumn="Apellido_Materno" />
+              <Mapping SourceColumn="Municipio" DataSetColumn="Municipio" />
+              <Mapping SourceColumn="Correo" DataSetColumn="Correo" />
+              <Mapping SourceColumn="Tipo_Usuario" DataSetColumn="Tipo_Usuario" />
+              <Mapping SourceColumn="Usuario" DataSetColumn="Usuario" />
+              <Mapping SourceColumn="Contraseña" DataSetColumn="Contraseña" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bd_saattic2DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bd_saattic2DataSet1" msprop:Generator_UserDSName="bd_saattic2DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vistaClientes" msprop:Generator_TableClassName="vistaClientesDataTable" msprop:Generator_TableVarName="tablevistaClientes" msprop:Generator_TablePropName="vistaClientes" msprop:Generator_RowDeletingName="vistaClientesRowDeleting" msprop:Generator_RowChangingName="vistaClientesRowChanging" msprop:Generator_RowEvHandlerName="vistaClientesRowChangeEventHandler" msprop:Generator_RowDeletedName="vistaClientesRowDeleted" msprop:Generator_UserTableName="vistaClientes" msprop:Generator_RowChangedName="vistaClientesRowChanged" msprop:Generator_RowEvArgName="vistaClientesRowChangeEvent" msprop:Generator_RowClassName="vistaClientesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="intId_persona" msprop:Generator_ColumnVarNameInTable="columnintId_persona" msprop:Generator_ColumnPropNameInRow="intId_persona" msprop:Generator_ColumnPropNameInTable="intId_personaColumn" msprop:Generator_UserColumnName="intId_persona" type="xs:int" />
+              <xs:element name="vchNombre" msprop:Generator_ColumnVarNameInTable="columnvchNombre" msprop:Generator_ColumnPropNameInRow="vchNombre" msprop:Generator_ColumnPropNameInTable="vchNombreColumn" msprop:Generator_UserColumnName="vchNombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchAPaterno" msprop:Generator_ColumnVarNameInTable="columnvchAPaterno" msprop:Generator_ColumnPropNameInRow="vchAPaterno" msprop:Generator_ColumnPropNameInTable="vchAPaternoColumn" msprop:Generator_UserColumnName="vchAPaterno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchAMaterno" msprop:Generator_ColumnVarNameInTable="columnvchAMaterno" msprop:Generator_ColumnPropNameInRow="vchAMaterno" msprop:Generator_ColumnPropNameInTable="vchAMaternoColumn" msprop:Generator_UserColumnName="vchAMaterno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="intId_municipo" msprop:Generator_ColumnVarNameInTable="columnintId_municipo" msprop:Generator_ColumnPropNameInRow="intId_municipo" msprop:Generator_ColumnPropNameInTable="intId_municipoColumn" msprop:Generator_UserColumnName="intId_municipo" type="xs:int" minOccurs="0" />
+              <xs:element name="vchCorreo" msprop:Generator_ColumnVarNameInTable="columnvchCorreo" msprop:Generator_ColumnPropNameInRow="vchCorreo" msprop:Generator_ColumnPropNameInTable="vchCorreoColumn" msprop:Generator_UserColumnName="vchCorreo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="intId_tUser" msprop:Generator_ColumnVarNameInTable="columnintId_tUser" msprop:Generator_ColumnPropNameInRow="intId_tUser" msprop:Generator_ColumnPropNameInTable="intId_tUserColumn" msprop:Generator_UserColumnName="intId_tUser" type="xs:int" minOccurs="0" />
+              <xs:element name="vchUsuario" msprop:Generator_ColumnVarNameInTable="columnvchUsuario" msprop:Generator_ColumnPropNameInRow="vchUsuario" msprop:Generator_ColumnPropNameInTable="vchUsuarioColumn" msprop:Generator_UserColumnName="vchUsuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchPwd" msprop:Generator_ColumnVarNameInTable="columnvchPwd" msprop:Generator_ColumnPropNameInRow="vchPwd" msprop:Generator_ColumnPropNameInTable="vchPwdColumn" msprop:Generator_UserColumnName="vchPwd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dtFRegis" msprop:Generator_ColumnVarNameInTable="columndtFRegis" msprop:Generator_ColumnPropNameInRow="dtFRegis" msprop:Generator_ColumnPropNameInTable="dtFRegisColumn" msprop:Generator_UserColumnName="dtFRegis" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="intStatus" msprop:Generator_ColumnVarNameInTable="columnintStatus" msprop:Generator_ColumnPropNameInRow="intStatus" msprop:Generator_ColumnPropNameInTable="intStatusColumn" msprop:Generator_UserColumnName="intStatus" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vistaClientes1" msprop:Generator_TableClassName="vistaClientes1DataTable" msprop:Generator_TableVarName="tablevistaClientes1" msprop:Generator_TablePropName="vistaClientes1" msprop:Generator_RowDeletingName="vistaClientes1RowDeleting" msprop:Generator_RowChangingName="vistaClientes1RowChanging" msprop:Generator_RowEvHandlerName="vistaClientes1RowChangeEventHandler" msprop:Generator_RowDeletedName="vistaClientes1RowDeleted" msprop:Generator_UserTableName="vistaClientes1" msprop:Generator_RowChangedName="vistaClientes1RowChanged" msprop:Generator_RowEvArgName="vistaClientes1RowChangeEvent" msprop:Generator_RowClassName="vistaClientes1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_persona" msprop:Generator_ColumnVarNameInTable="columnId_persona" msprop:Generator_ColumnPropNameInRow="Id_persona" msprop:Generator_ColumnPropNameInTable="Id_personaColumn" msprop:Generator_UserColumnName="Id_persona" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido_Paterno" msprop:Generator_ColumnVarNameInTable="columnApellido_Paterno" msprop:Generator_ColumnPropNameInRow="Apellido_Paterno" msprop:Generator_ColumnPropNameInTable="Apellido_PaternoColumn" msprop:Generator_UserColumnName="Apellido_Paterno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido_Materno" msprop:Generator_ColumnVarNameInTable="columnApellido_Materno" msprop:Generator_ColumnPropNameInRow="Apellido_Materno" msprop:Generator_ColumnPropNameInTable="Apellido_MaternoColumn" msprop:Generator_UserColumnName="Apellido_Materno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Municipio" msprop:Generator_ColumnVarNameInTable="columnMunicipio" msprop:Generator_ColumnPropNameInRow="Municipio" msprop:Generator_ColumnPropNameInTable="MunicipioColumn" msprop:Generator_UserColumnName="Municipio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Correo" msprop:Generator_ColumnVarNameInTable="columnCorreo" msprop:Generator_ColumnPropNameInRow="Correo" msprop:Generator_ColumnPropNameInTable="CorreoColumn" msprop:Generator_UserColumnName="Correo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tipo_Usuario" msprop:Generator_ColumnVarNameInTable="columnTipo_Usuario" msprop:Generator_ColumnPropNameInRow="Tipo_Usuario" msprop:Generator_ColumnPropNameInTable="Tipo_UsuarioColumn" msprop:Generator_UserColumnName="Tipo_Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_UserColumnName="Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contraseña" msprop:Generator_ColumnVarNameInTable="columnContraseña" msprop:Generator_ColumnPropNameInRow="Contraseña" msprop:Generator_ColumnPropNameInTable="ContraseñaColumn" msprop:Generator_UserColumnName="Contraseña" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vistaClientes2" msprop:Generator_TableClassName="vistaClientes2DataTable" msprop:Generator_TableVarName="tablevistaClientes2" msprop:Generator_TablePropName="vistaClientes2" msprop:Generator_RowDeletingName="vistaClientes2RowDeleting" msprop:Generator_RowChangingName="vistaClientes2RowChanging" msprop:Generator_RowEvHandlerName="vistaClientes2RowChangeEventHandler" msprop:Generator_RowDeletedName="vistaClientes2RowDeleted" msprop:Generator_UserTableName="vistaClientes2" msprop:Generator_RowChangedName="vistaClientes2RowChanged" msprop:Generator_RowEvArgName="vistaClientes2RowChangeEvent" msprop:Generator_RowClassName="vistaClientes2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_persona" msprop:Generator_ColumnVarNameInTable="columnId_persona" msprop:Generator_ColumnPropNameInRow="Id_persona" msprop:Generator_ColumnPropNameInTable="Id_personaColumn" msprop:Generator_UserColumnName="Id_persona" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido_Paterno" msprop:Generator_ColumnVarNameInTable="columnApellido_Paterno" msprop:Generator_ColumnPropNameInRow="Apellido_Paterno" msprop:Generator_ColumnPropNameInTable="Apellido_PaternoColumn" msprop:Generator_UserColumnName="Apellido_Paterno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido_Materno" msprop:Generator_ColumnVarNameInTable="columnApellido_Materno" msprop:Generator_ColumnPropNameInRow="Apellido_Materno" msprop:Generator_ColumnPropNameInTable="Apellido_MaternoColumn" msprop:Generator_UserColumnName="Apellido_Materno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Municipio" msprop:Generator_ColumnVarNameInTable="columnMunicipio" msprop:Generator_ColumnPropNameInRow="Municipio" msprop:Generator_ColumnPropNameInTable="MunicipioColumn" msprop:Generator_UserColumnName="Municipio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Correo" msprop:Generator_ColumnVarNameInTable="columnCorreo" msprop:Generator_ColumnPropNameInRow="Correo" msprop:Generator_ColumnPropNameInTable="CorreoColumn" msprop:Generator_UserColumnName="Correo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tipo_Usuario" msprop:Generator_ColumnVarNameInTable="columnTipo_Usuario" msprop:Generator_ColumnPropNameInRow="Tipo_Usuario" msprop:Generator_ColumnPropNameInTable="Tipo_UsuarioColumn" msprop:Generator_UserColumnName="Tipo_Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_UserColumnName="Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contraseña" msprop:Generator_ColumnVarNameInTable="columnContraseña" msprop:Generator_ColumnPropNameInRow="Contraseña" msprop:Generator_ColumnPropNameInTable="ContraseñaColumn" msprop:Generator_UserColumnName="Contraseña" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vistaClientes" />
+      <xs:field xpath="mstns:intId_persona" />
+    </xs:unique>
+    <xs:unique name="vistaClientes1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vistaClientes1" />
+      <xs:field xpath="mstns:Id_persona" />
+    </xs:unique>
+    <xs:unique name="vistaClientes2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vistaClientes2" />
+      <xs:field xpath="mstns:Id_persona" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bd_saattic5DataSet1" targetNamespace="http://tempuri.org/bd_saattic5DataSet1.xsd" xmlns:mstns="http://tempuri.org/bd_saattic5DataSet1.xsd" xmlns="http://tempuri.org/bd_saattic5DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bd_saattic5ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bd_saattic5ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proyecto_SAAT_TIC.My.MySettings.GlobalReference.Default.bd_saattic5ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vistaInformaticosTableAdapter" GeneratorDataComponentClassName="vistaInformaticosTableAdapter" Name="vistaInformaticos" UserDataComponentName="vistaInformaticosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bd_saattic5ConnectionString (MySettings)" DbObjectName="bd_saattic5.dbo.vistaInformaticos" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdInformatico, vchNombre, vchAPaterno, vchAMaterno, vchMunicipio, vchCorreo, vchTipoUser, vchUsuario, vchPwd, intStatus FROM dbo.vistaInformaticos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdInformatico" DataSetColumn="IdInformatico" />
+              <Mapping SourceColumn="vchNombre" DataSetColumn="vchNombre" />
+              <Mapping SourceColumn="vchAPaterno" DataSetColumn="vchAPaterno" />
+              <Mapping SourceColumn="vchAMaterno" DataSetColumn="vchAMaterno" />
+              <Mapping SourceColumn="vchMunicipio" DataSetColumn="vchMunicipio" />
+              <Mapping SourceColumn="vchCorreo" DataSetColumn="vchCorreo" />
+              <Mapping SourceColumn="vchTipoUser" DataSetColumn="vchTipoUser" />
+              <Mapping SourceColumn="vchUsuario" DataSetColumn="vchUsuario" />
+              <Mapping SourceColumn="vchPwd" DataSetColumn="vchPwd" />
+              <Mapping SourceColumn="intStatus" DataSetColumn="intStatus" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bd_saattic5DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bd_saattic5DataSet1" msprop:Generator_UserDSName="bd_saattic5DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vistaInformaticos" msprop:Generator_TableClassName="vistaInformaticosDataTable" msprop:Generator_TableVarName="tablevistaInformaticos" msprop:Generator_TablePropName="vistaInformaticos" msprop:Generator_RowDeletingName="vistaInformaticosRowDeleting" msprop:Generator_RowChangingName="vistaInformaticosRowChanging" msprop:Generator_RowEvHandlerName="vistaInformaticosRowChangeEventHandler" msprop:Generator_RowDeletedName="vistaInformaticosRowDeleted" msprop:Generator_UserTableName="vistaInformaticos" msprop:Generator_RowChangedName="vistaInformaticosRowChanged" msprop:Generator_RowEvArgName="vistaInformaticosRowChangeEvent" msprop:Generator_RowClassName="vistaInformaticosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdInformatico" msprop:Generator_ColumnVarNameInTable="columnIdInformatico" msprop:Generator_ColumnPropNameInRow="IdInformatico" msprop:Generator_ColumnPropNameInTable="IdInformaticoColumn" msprop:Generator_UserColumnName="IdInformatico" type="xs:int" />
+              <xs:element name="vchNombre" msprop:Generator_ColumnVarNameInTable="columnvchNombre" msprop:Generator_ColumnPropNameInRow="vchNombre" msprop:Generator_ColumnPropNameInTable="vchNombreColumn" msprop:Generator_UserColumnName="vchNombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchAPaterno" msprop:Generator_ColumnVarNameInTable="columnvchAPaterno" msprop:Generator_ColumnPropNameInRow="vchAPaterno" msprop:Generator_ColumnPropNameInTable="vchAPaternoColumn" msprop:Generator_UserColumnName="vchAPaterno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchAMaterno" msprop:Generator_ColumnVarNameInTable="columnvchAMaterno" msprop:Generator_ColumnPropNameInRow="vchAMaterno" msprop:Generator_ColumnPropNameInTable="vchAMaternoColumn" msprop:Generator_UserColumnName="vchAMaterno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchMunicipio" msprop:Generator_ColumnVarNameInTable="columnvchMunicipio" msprop:Generator_ColumnPropNameInRow="vchMunicipio" msprop:Generator_ColumnPropNameInTable="vchMunicipioColumn" msprop:Generator_UserColumnName="vchMunicipio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchCorreo" msprop:Generator_ColumnVarNameInTable="columnvchCorreo" msprop:Generator_ColumnPropNameInRow="vchCorreo" msprop:Generator_ColumnPropNameInTable="vchCorreoColumn" msprop:Generator_UserColumnName="vchCorreo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchTipoUser" msprop:Generator_ColumnVarNameInTable="columnvchTipoUser" msprop:Generator_ColumnPropNameInRow="vchTipoUser" msprop:Generator_ColumnPropNameInTable="vchTipoUserColumn" msprop:Generator_UserColumnName="vchTipoUser" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchUsuario" msprop:Generator_ColumnVarNameInTable="columnvchUsuario" msprop:Generator_ColumnPropNameInRow="vchUsuario" msprop:Generator_ColumnPropNameInTable="vchUsuarioColumn" msprop:Generator_UserColumnName="vchUsuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vchPwd" msprop:Generator_ColumnVarNameInTable="columnvchPwd" msprop:Generator_ColumnPropNameInRow="vchPwd" msprop:Generator_ColumnPropNameInTable="vchPwdColumn" msprop:Generator_UserColumnName="vchPwd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="intStatus" msprop:Generator_ColumnVarNameInTable="columnintStatus" msprop:Generator_ColumnPropNameInRow="intStatus" msprop:Generator_ColumnPropNameInTable="intStatusColumn" msprop:Generator_UserColumnName="intStatus" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vistaInformaticos" />
+      <xs:field xpath="mstns:IdInformatico" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

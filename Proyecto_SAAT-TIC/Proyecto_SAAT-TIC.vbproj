@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65002431-3A18-4756-8171-74B3547F678D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Proyecto_SAAT_TIC.My.MyApplication</StartupObject>
+    <RootNamespace>Proyecto_SAAT_TIC</RootNamespace>
+    <AssemblyName>Proyecto_SAAT-TIC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Proyecto_SAAT-TIC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Proyecto_SAAT-TIC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>computer_world.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bd_saattic2DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_saattic2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bd_saattic2DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_saattic2DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bd_saattic2DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_saattic2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bd_saattic2DataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_saattic2DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bd_saattic2DataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_saattic2DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bd_saattic5DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_saattic5DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bd_saattic5DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_saattic5DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bd_saattic5DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_saattic5DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bd_saattic5DataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bd_saattic5DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="clsValidar.vb" />
+    <Compile Include="controlador\vArea.vb" />
+    <Compile Include="controlador\vAsesoria.vb" />
+    <Compile Include="controlador\vPersonas.vb" />
+    <Compile Include="controlador\vProyecto.vb" />
+    <Compile Include="controlador\vTipo.vb" />
+    <Compile Include="controlador\vUsuario.vb" />
+    <Compile Include="modelo\clsPrincipal.vb" />
+    <Compile Include="modelo\cls_conexion.vb" />
+    <Compile Include="modelo\fArea.vb" />
+    <Compile Include="modelo\fAsesoria.vb" />
+    <Compile Include="modelo\fPersonas.vb" />
+    <Compile Include="modelo\fProyecto.vb" />
+    <Compile Include="modelo\fTproyecto.vb" />
+    <Compile Include="modelo\fUsuario.vb" />
+    <Compile Include="vista\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\formClientesReport.Designer.vb">
+      <DependentUpon>formClientesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\formClientesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\formInforRepor.Designer.vb">
+      <DependentUpon>formInforRepor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\formInforRepor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\formProyecRepor.Designer.vb">
+      <DependentUpon>formProyecRepor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\formProyecRepor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\formProyectosrepor.Designer.vb">
+      <DependentUpon>formProyectosrepor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\formProyectosrepor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmAcerca.Designer.vb">
+      <DependentUpon>frmAcerca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmAcerca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmAreadeConocimiento.Designer.vb">
+      <DependentUpon>frmAreadeConocimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmAreadeConocimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmAsesoria.Designer.vb">
+      <DependentUpon>frmAsesoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmAsesoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmAsesorias.Designer.vb">
+      <DependentUpon>frmAsesorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmAsesorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmAvisos.Designer.vb">
+      <DependentUpon>frmAvisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmAvisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmAvisosaClientes.Designer.vb">
+      <DependentUpon>frmAvisosaClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmAvisosaClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmEditarPerfil.Designer.vb">
+      <DependentUpon>frmEditarPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmEditarPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmErrorUsuario.Designer.vb">
+      <DependentUpon>frmErrorUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmErrorUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmInformaticos.Designer.vb">
+      <DependentUpon>frmInformaticos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmInformaticos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmManual.Designer.vb">
+      <DependentUpon>frmManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmProyecto.Designer.vb">
+      <DependentUpon>frmProyecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmProyecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmProyectos.Designer.vb">
+      <DependentUpon>frmProyectos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmProyectos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmRClientes.Designer.vb">
+      <DependentUpon>frmRClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmRClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmReporteClientes.Designer.vb">
+      <DependentUpon>frmReporteClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmReporteClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmReportes.Designer.vb">
+      <DependentUpon>frmReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmSubirArchivo.Designer.vb">
+      <DependentUpon>frmSubirArchivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmSubirArchivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmTipodeServicio.Designer.vb">
+      <DependentUpon>frmTipodeServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmTipodeServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="vista\Rasesorias.Designer.vb">
+      <DependentUpon>Rasesorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Rasesorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Rinformaticos.Designer.vb">
+      <DependentUpon>Rinformaticos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Rinformaticos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Rproyectos.Designer.vb">
+      <DependentUpon>Rproyectos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Rproyectos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="vista\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\formClientesReport.resx">
+      <DependentUpon>formClientesReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\formInforRepor.resx">
+      <DependentUpon>formInforRepor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\formProyecRepor.resx">
+      <DependentUpon>formProyecRepor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\formProyectosrepor.resx">
+      <DependentUpon>formProyectosrepor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmAcerca.resx">
+      <DependentUpon>frmAcerca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmAreadeConocimiento.resx">
+      <DependentUpon>frmAreadeConocimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmAsesoria.resx">
+      <DependentUpon>frmAsesoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmAsesorias.resx">
+      <DependentUpon>frmAsesorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmAvisos.resx">
+      <DependentUpon>frmAvisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmAvisosaClientes.resx">
+      <DependentUpon>frmAvisosaClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmEditarPerfil.resx">
+      <DependentUpon>frmEditarPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmErrorUsuario.resx">
+      <DependentUpon>frmErrorUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmInformaticos.resx">
+      <DependentUpon>frmInformaticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmManual.resx">
+      <DependentUpon>frmManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmProyecto.resx">
+      <DependentUpon>frmProyecto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmProyectos.resx">
+      <DependentUpon>frmProyectos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmRClientes.resx">
+      <DependentUpon>frmRClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmReporteClientes.resx">
+      <DependentUpon>frmReporteClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmReportes.resx">
+      <DependentUpon>frmReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmSubirArchivo.resx">
+      <DependentUpon>frmSubirArchivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmTipodeServicio.resx">
+      <DependentUpon>frmTipodeServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Rasesorias.rdlc" />
+    <EmbeddedResource Include="vista\Rasesorias.resx">
+      <DependentUpon>Rasesorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Rclientes.rdlc" />
+    <EmbeddedResource Include="vista\reporteAsesorias.rdlc" />
+    <EmbeddedResource Include="vista\reporteClientes.rdlc" />
+    <EmbeddedResource Include="vista\reporteProyectos.rdlc" />
+    <EmbeddedResource Include="vista\repoteInformaticos.rdlc" />
+    <EmbeddedResource Include="vista\RInformaticos.rdlc" />
+    <EmbeddedResource Include="vista\Rinformaticos.resx">
+      <DependentUpon>Rinformaticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Rproyectos.rdlc" />
+    <EmbeddedResource Include="vista\Rproyectos.resx">
+      <DependentUpon>Rproyectos.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bd_saattic2DataSet.xsc">
+      <DependentUpon>bd_saattic2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_saattic2DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_saattic2DataSet.xss">
+      <DependentUpon>bd_saattic2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic2DataSet1.xsc">
+      <DependentUpon>bd_saattic2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_saattic2DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_saattic2DataSet1.xss">
+      <DependentUpon>bd_saattic2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic2DataSet2.xsc">
+      <DependentUpon>bd_saattic2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_saattic2DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_saattic2DataSet2.xss">
+      <DependentUpon>bd_saattic2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic2DataSet3.xsc">
+      <DependentUpon>bd_saattic2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic2DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_saattic2DataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_saattic2DataSet3.xss">
+      <DependentUpon>bd_saattic2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic2DataSet4.xsc">
+      <DependentUpon>bd_saattic2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic2DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_saattic2DataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_saattic2DataSet4.xss">
+      <DependentUpon>bd_saattic2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic5DataSet.xsc">
+      <DependentUpon>bd_saattic5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_saattic5DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_saattic5DataSet.xss">
+      <DependentUpon>bd_saattic5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic5DataSet1.xsc">
+      <DependentUpon>bd_saattic5DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic5DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_saattic5DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_saattic5DataSet1.xss">
+      <DependentUpon>bd_saattic5DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic5DataSet2.xsc">
+      <DependentUpon>bd_saattic5DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic5DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_saattic5DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_saattic5DataSet2.xss">
+      <DependentUpon>bd_saattic5DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic5DataSet3.xsc">
+      <DependentUpon>bd_saattic5DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="bd_saattic5DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bd_saattic5DataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bd_saattic5DataSet3.xss">
+      <DependentUpon>bd_saattic5DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\658.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotipo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading....gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\display.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gohome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled667.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_user_accept.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f41ef2f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Secuty-agent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_alumno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Files.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mnuClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tester.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Einstein_%281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4154519421_d445005e09_z.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotePad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1363134335_Gnome-View-Refresh-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_user_help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_fonts_512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar_cuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Entrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Glyph Check %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package_toys %28141%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kdmconfig.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_info.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="computer_world.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
